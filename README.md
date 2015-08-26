@@ -1,4 +1,4 @@
-# Gesture Recognizer Closures
+# Gesture Recognizer Closures [![Build Status](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures.svg?branch=master)](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures) [![Platform](http://img.shields.io/cocoapods/p/GestureRecognizerClosures.svg?style=flat)](http://cocoadocs.org/docsets/GestureRecognizerClosures) [![Pod](http://img.shields.io/cocoapods/v/GestureRecognizerClosures.svg?style=flat)]() [![License](http://img.shields.io/cocoapods/l/GestureRecognizerClosures.svg?style=flat)](http://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/LICENSE)
 [Closure](http://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html) support for handling gesture recognizers in Swift.
 
 `GestureRecognizerClosures` supports all subclasses of [`UIGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIGestureRecognizer_Class) including:
@@ -31,7 +31,7 @@ let swipeDown = UISwipeGestureRecognizer { gestureRecognizer in
 }
 swipeDown.direction = .Down
 view.addGestureRecognizer(swipeDown)
-```
+```˜˜˜
 ## Installation
 
 ### Use CocoaPods
