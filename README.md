@@ -11,7 +11,7 @@
 - [`UISwipeGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UISwipeGestureRecognizer_Class)
 - [`UITapGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITapGestureRecognizer_Class)
 
-
+## Examples
 Example of handling a [`UITapGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITapGestureRecognizer_Class)
 ```Swift
 view.addGestureRecognizer(UITapGestureRecognizer { _ in
@@ -33,7 +33,7 @@ let swipeDown = UISwipeGestureRecognizer { gestureRecognizer in
 }
 swipeDown.direction = .Down
 view.addGestureRecognizer(swipeDown)
-```˜˜˜
+```
 ## Installation
 
 ### Use CocoaPods
