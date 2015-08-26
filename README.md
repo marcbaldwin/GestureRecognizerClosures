@@ -1,27 +1,34 @@
 # Gesture Recognizer Closures
 [Closure](http://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html) support for handling gesture recognizers in Swift.
 
-`GestureRecognizerClosures` supports all subclasses of [`UIGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIGestureRecognizer_Class/)
+`GestureRecognizerClosures` supports all subclasses of [`UIGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIGestureRecognizer_Class) including:
+- [`UILongPressGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UILongPressGestureRecognizer_Class)
+- [`UIPanGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPanGestureRecognizer_Class)
+- [`UIPinchGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPinchGestureRecognizer_Class)
+- [`UIRotationGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIRotateGestureRecognizer_Class)
+- [`UISwipeGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UISwipeGestureRecognizer_Class)
+- [`UITapGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITapGestureRecognizer_Class)
 
-Example of handling a `UITapGestureRecognizer`
+
+Example of handling a [`UITapGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITapGestureRecognizer_Class)
 ```Swift
 view.addGestureRecognizer(UITapGestureRecognizer { _ in
     // Respond to tap
 })
 ```
-Example of handling a `UIPinchGestureRecognizer`
+Example of handling a [`UIPinchGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPinchGestureRecognizer_Class)
 ```Swift
 view.addGestureRecognizer(UIPinchGestureRecognizer { gestureRecognizer in
     let pinchGestureRecognizer = gestureRecognizer as! UIPinchGestureRecognizer
     // Respond to pinch
 })
 ```
-Example of handling a `UISwipeGestureRecognizer`
+Example of handling a [`UISwipeGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UISwipeGestureRecognizer_Class)
 ```Swift
 let swipeDown = UISwipeGestureRecognizer { gestureRecognizer in
     let swipeDownGestureRecognizer = gestureRecognizer as! UISwipeGestureRecognizer
     // Respond to swipe
-})
+}
 swipeDown.direction = .Down
 view.addGestureRecognizer(swipeDown)
 ```
