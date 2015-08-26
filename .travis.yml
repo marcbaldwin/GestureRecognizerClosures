@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: beta-xcode6.3
+
+before_install:
+  - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+
+script:
+  - set -o pipefail
+  - xcodebuild -project GestureRecognizerClosures.xcodeproj -scheme GestureRecognizerClosures -sdk iphonesimulator8.3 -destination "platform=iOS Simulator,name=iPhone 5" -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty -c
