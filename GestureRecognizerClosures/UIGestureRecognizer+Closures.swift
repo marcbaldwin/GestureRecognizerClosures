@@ -11,7 +11,7 @@ public extension UIGestureRecognizer {
 
     public convenience init(handler: (UIGestureRecognizer) -> Void) {
         let handler = GestureRecognizerClosureHandler(handler: handler)
-        self.init(target: handler, action: "handleGesture")
+        self.init(target: handler, action: "handleGesture:")
         self.handler = handler
     }
 }
