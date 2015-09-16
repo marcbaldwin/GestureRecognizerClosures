@@ -9,10 +9,10 @@ All noteable changes to `GestureRecognizerClosures` will be documented in this f
 - 1.1.0 - Adds utility functions to `UIView` for adding closures for `UIGestureRecognizer`
 - 1.0.0 - Adds closure initializer to `UIGestureRecognizer`
 
-## [2.0.0 - UIView Utility Functions](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.0.0)
+## [2.0.0 - Swift 2](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.0.0)
 Released on 2015-09-16
 
-### Added
+### Breaking Changes
 - Compile against Swift 2
 
 ## [1.1.0 - UIView Utility Functions](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/1.1.0)
