@@ -6,7 +6,7 @@ public extension UIGestureRecognizer {
 
     internal var handler: GestureRecognizerClosureHandler! {
         get { return objc_getAssociatedObject(self, &HandlerKey) as! GestureRecognizerClosureHandler }
-        set { objc_setAssociatedObject(self, &HandlerKey, newValue, UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC)) }
+        set { objc_setAssociatedObject(self, &HandlerKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
 
     public convenience init(handler: (UIGestureRecognizer) -> Void) {
