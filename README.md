@@ -12,28 +12,76 @@
 - [`UITapGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITapGestureRecognizer_Class)
 
 ## Examples
-Example of handling a [`UITapGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITapGestureRecognizer_Class)
+Example of handling a single tap
 ```Swift
-view.addGestureRecognizer(UITapGestureRecognizer { _ in
-    // Respond to tap
-})
-```
-Example of handling a [`UIPinchGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPinchGestureRecognizer_Class)
-```Swift
-view.addGestureRecognizer(UIPinchGestureRecognizer { gestureRecognizer in
-    let pinchGestureRecognizer = gestureRecognizer as! UIPinchGestureRecognizer
-    // Respond to pinch
-})
-```
-Example of handling a [`UISwipeGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UISwipeGestureRecognizer_Class)
-```Swift
-let swipeDown = UISwipeGestureRecognizer { gestureRecognizer in
-    let swipeDownGestureRecognizer = gestureRecognizer as! UISwipeGestureRecognizer
-    // Respond to swipe
+view.onTap { _ in
+    // Do something
 }
-swipeDown.direction = .Down
-view.addGestureRecognizer(swipeDown)
 ```
+
+Example of handling a double tap
+```Swift
+view.onDoubleTap { _ in
+    // Do something
+}
+```
+
+Example of handling a long press
+```Swift
+view.onLongPress { _ in
+    // Do something
+}
+```
+
+Example of handling a pinch
+```Swift
+view.onPinch { pinch in
+    // Do something
+}
+```
+
+Example of handling a pan
+```Swift
+view.onPan { pan in
+    // Do something
+}
+```
+
+Example of handling a rotation
+```Swift
+view.onRotate { rotate in
+    // Do something
+}
+```
+
+Example of handling a swipe left
+```Swift
+view.onSwipeLeft { _ in
+    // Do something
+}
+```
+
+Example of handling a swipe right
+```Swift
+view.onSwipeRight { _ in
+    // Do something
+}
+```
+
+Example of handling a swipe up
+```Swift
+view.onSwipeUp { _ in
+    // Do something
+}
+```
+
+Example of handling a swipe down
+```Swift
+view.onSwipeDown { _ in
+    // Do something
+}
+```
+
 ## Installation
 
 ### Use CocoaPods
@@ -50,7 +98,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'GestureRecognizerClosures', '~> 1'
+pod 'GestureRecognizerClosures', '~> 1.1'
 ```
 
 Then, run the following command:
@@ -62,7 +110,7 @@ $ pod install
 To integrate `GestureRecognizerClosures` into your existing CocoaPods Xcode project specify it in your `Podfile`:
 
 ```ruby
-pod 'GestureRecognizerClosures', '~> 1'
+pod 'GestureRecognizerClosures', '~> 1.1'
 ```
 Then, run the following command:
 ```bash

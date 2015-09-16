@@ -5,9 +5,26 @@ All noteable changes to `GestureRecognizerClosures` will be documented in this f
 `GestureRecognizerClosures` adheres to [Semantic Versioning](http://semver.org/).
 
 ## Release Summary
-- 1.0.0 - Initial Release: Adds closure initializer to `UIGestureRecognizer`
+- 1.1.0 - Adds utility functions to `UIView` for adding closures for `UIGestureRecognizer`
+- 1.0.0 - Adds closure initializer to `UIGestureRecognizer`
 
-## [1.0.0 - Initial Release](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/1.0.0)
+## [1.1.0 - UIView Utility Functions](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/1.0.0)
+Released on 2015-09-16
+
+### Added
+- The following utility functions to `UIView`
+  - onTap
+  - onDoubleTap
+  - onLongPress
+  - onPinch
+  - onPan
+  - onRotate
+  - onSwipeLeft
+  - onSwipeRight
+  - onSwipeUp
+  - onSwipeDown
+
+## [1.0.0 - Closure Initializer](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/1.0.0)
 Released on 2015-08-26
 
 ### Added
