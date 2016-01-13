@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099B251F1ED147F52612EBB2 /* Pods_GestureRecognizerClosuresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582EEE9C4615D853BA98BBC2 /* Pods_GestureRecognizerClosuresTests.framework */; };
 		A03BAB641C470E6B00E8395F /* GestureClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03BAB631C470E6B00E8395F /* GestureClosure.swift */; };
 		A070B78D1BA201CB00EF265E /* UIView+Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070B78C1BA201CB00EF265E /* UIView+Closures.swift */; };
 		A083DE171BA9EE6B001E867F /* UIViewGesture+ClosuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083DE161BA9EE6B001E867F /* UIViewGesture+ClosuresTests.swift */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		249603040906260B586F9885 /* Pods-GestureRecognizerClosuresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureRecognizerClosuresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests.release.xcconfig"; sourceTree = "<group>"; };
+		582EEE9C4615D853BA98BBC2 /* Pods_GestureRecognizerClosuresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GestureRecognizerClosuresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01ED04C284DEA3BA44310FB /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureRecognizerClosuresTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A03BAB631C470E6B00E8395F /* GestureClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureClosure.swift; sourceTree = "<group>"; };
 		A070B78C1BA201CB00EF265E /* UIView+Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Closures.swift"; sourceTree = "<group>"; };
 		A083DE161BA9EE6B001E867F /* UIViewGesture+ClosuresTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewGesture+ClosuresTests.swift"; sourceTree = "<group>"; };
@@ -52,18 +56,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D21BEA1BAA0F2A0085219D /* GestureRecognizerClosures.framework in Frameworks */,
+				099B251F1ED147F52612EBB2 /* Pods_GestureRecognizerClosuresTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202E214FA1F64C5C8388E500 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A01ED04C284DEA3BA44310FB /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */,
+				249603040906260B586F9885 /* Pods-GestureRecognizerClosuresTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E61151A260762BB803A2727 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				582EEE9C4615D853BA98BBC2 /* Pods_GestureRecognizerClosuresTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0E0A2C61B8D186F00E9F7D0 = {
 			isa = PBXGroup;
 			children = (
 				A0E0A2D21B8D186F00E9F7D0 /* GestureRecognizerClosures */,
 				A0E0A2DF1B8D186F00E9F7D0 /* GestureRecognizerClosuresTests */,
 				A0E0A2D11B8D186F00E9F7D0 /* Products */,
+				202E214FA1F64C5C8388E500 /* Pods */,
+				9E61151A260762BB803A2727 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0E0A2E91B8D186F00E9F7D0 /* Build configuration list for PBXNativeTarget "GestureRecognizerClosuresTests" */;
 			buildPhases = (
+				0D9E5D75AC0569D863D41EAE /* Check Pods Manifest.lock */,
 				A0E0A2D71B8D186F00E9F7D0 /* Sources */,
 				A0E0A2D81B8D186F00E9F7D0 /* Frameworks */,
 				A0E0A2D91B8D186F00E9F7D0 /* Resources */,
+				561FB83714F10F01F64DA985 /* Embed Pods Frameworks */,
+				6B02AA73C3ECC039DCE65502 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +244,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D9E5D75AC0569D863D41EAE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		561FB83714F10F01F64DA985 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B02AA73C3ECC039DCE65502 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0E0A2CB1B8D186F00E9F7D0 /* Sources */ = {
@@ -380,6 +455,7 @@
 		};
 		A0E0A2EA1B8D186F00E9F7D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A01ED04C284DEA3BA44310FB /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -394,6 +470,7 @@
 		};
 		A0E0A2EB1B8D186F00E9F7D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 249603040906260B586F9885 /* Pods-GestureRecognizerClosuresTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GestureRecognizerClosuresTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
