@@ -1,30 +1,46 @@
 import UIKit
 
-private var HandlerKey: UInt8 = 0
+public extension UITapGestureRecognizer {
 
-public extension UIGestureRecognizer {
-
-    internal var handler: GestureRecognizerClosureHandler! {
-        get { return objc_getAssociatedObject(self, &HandlerKey) as! GestureRecognizerClosureHandler }
-        set { objc_setAssociatedObject(self, &HandlerKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
-    }
-
-    public convenience init(handler: (UIGestureRecognizer) -> Void) {
-        let handler = GestureRecognizerClosureHandler(handler: handler)
-        self.init(target: handler, action: "handleGesture:")
-        self.handler = handler
+    public convenience init(taps: Int = 1, touches: Int = 1, handler: (UITapGestureRecognizer) -> Void) {
+        self.init(handler: handler, type: UITapGestureRecognizer.self)
+        numberOfTapsRequired = taps
+        numberOfTouchesRequired = touches
     }
 }
 
-internal class GestureRecognizerClosureHandler: NSObject {
+public extension UILongPressGestureRecognizer {
 
-    private let handler: (UIGestureRecognizer) -> Void
-
-    init(handler: (UIGestureRecognizer) -> Void) {
-        self.handler = handler
+    public convenience init(handler: (UILongPressGestureRecognizer) -> Void) {
+        self.init(handler: handler, type: UILongPressGestureRecognizer.self)
     }
+}
 
-    func handleGesture(gestureRecognizer: UIGestureRecognizer) {
-        handler(gestureRecognizer)
+public extension UISwipeGestureRecognizer {
+
+    public convenience init(direction: UISwipeGestureRecognizerDirection, handler: (UISwipeGestureRecognizer) -> Void) {
+        self.init(handler: handler, type: UISwipeGestureRecognizer.self)
+        self.direction = direction
+    }
+}
+
+public extension UIPanGestureRecognizer {
+
+    public convenience init(handler: (UIPanGestureRecognizer) -> Void) {
+        self.init(handler: handler, type: UIPanGestureRecognizer.self)
+    }
+}
+
+public extension UIPinchGestureRecognizer {
+
+    public convenience init(handler: (UIPinchGestureRecognizer) -> Void) {
+        self.init(handler: handler, type: UIPinchGestureRecognizer.self)
+    }
+}
+
+public extension UIRotationGestureRecognizer {
+
+    public convenience init(handler: (UIRotationGestureRecognizer) -> Void) {
+        self.init(handler: handler, type: UIRotationGestureRecognizer.self)
     }
 }

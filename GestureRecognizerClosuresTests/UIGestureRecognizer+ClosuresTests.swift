@@ -1,5 +1,5 @@
-import UIKit
 import XCTest
+@testable import GestureRecognizerClosures
 
 class UIGestureRecognizerClosuresTests: XCTestCase {
 
@@ -13,7 +13,7 @@ class UIGestureRecognizerClosuresTests: XCTestCase {
             self.gestureRecognizerPassedToClosure = gestureRecognizer
         }
 
-        testClosureIsInvokedForGestureRecognizer(gestureRecognizer, andIsOfType: UILongPressGestureRecognizer.self)
+        testClosureIsInvokedForGestureRecognizer(gestureRecognizer)
     }
 
     func testUIPanGestureRecognizerClosure() {
@@ -23,7 +23,7 @@ class UIGestureRecognizerClosuresTests: XCTestCase {
             self.gestureRecognizerPassedToClosure = gestureRecognizer
         }
 
-        testClosureIsInvokedForGestureRecognizer(gestureRecognizer, andIsOfType: UIPanGestureRecognizer.self)
+        testClosureIsInvokedForGestureRecognizer(gestureRecognizer)
     }
 
     func testUIPinchGestureRecognizerClosure() {
@@ -33,7 +33,7 @@ class UIGestureRecognizerClosuresTests: XCTestCase {
             self.gestureRecognizerPassedToClosure = gestureRecognizer
         }
 
-        testClosureIsInvokedForGestureRecognizer(gestureRecognizer, andIsOfType: UIPinchGestureRecognizer.self)
+        testClosureIsInvokedForGestureRecognizer(gestureRecognizer)
     }
 
     func testUIRotationGestureRecognizerClosure() {
@@ -43,17 +43,17 @@ class UIGestureRecognizerClosuresTests: XCTestCase {
             self.gestureRecognizerPassedToClosure = gestureRecognizer
         }
 
-        testClosureIsInvokedForGestureRecognizer(gestureRecognizer, andIsOfType: UIRotationGestureRecognizer.self)
+        testClosureIsInvokedForGestureRecognizer(gestureRecognizer)
     }
 
     func testUISwipeGestureRecognizerClosure() {
 
-        let gestureRecognizer = UISwipeGestureRecognizer { gestureRecognizer in
+        let gestureRecognizer = UISwipeGestureRecognizer(direction: .Left) { gestureRecognizer in
             self.closureExecuted = true
             self.gestureRecognizerPassedToClosure = gestureRecognizer
         }
 
-        testClosureIsInvokedForGestureRecognizer(gestureRecognizer, andIsOfType: UISwipeGestureRecognizer.self)
+        testClosureIsInvokedForGestureRecognizer(gestureRecognizer)
     }
 
     func testUITapGestureRecognizerClosure() {
@@ -63,20 +63,20 @@ class UIGestureRecognizerClosuresTests: XCTestCase {
             self.gestureRecognizerPassedToClosure = gestureRecognizer
         }
 
-        testClosureIsInvokedForGestureRecognizer(gestureRecognizer, andIsOfType: UITapGestureRecognizer.self)
+        testClosureIsInvokedForGestureRecognizer(gestureRecognizer)
     }
 }
 
 
 private extension UIGestureRecognizerClosuresTests {
 
-    private func testClosureIsInvokedForGestureRecognizer(gestureRecognizer: UIGestureRecognizer, andIsOfType aClass: AnyClass) {
-        let handler = gestureRecognizer.handler
+    private func testClosureIsInvokedForGestureRecognizer<T: UIGestureRecognizer>(gestureRecognizer: T) {
+        let handler: GestureClosure<T>  = gestureRecognizer.handler()
         XCTAssertNotNil(handler, "Gesture recognizer should have closure handler")
 
         handler.handleGesture(gestureRecognizer)
         XCTAssertTrue(closureExecuted, "Closure handler should execute closure")
         XCTAssertEqual(gestureRecognizer, gestureRecognizerPassedToClosure!, "Closure handler should receive gesture passed to it")
-        XCTAssertTrue(gestureRecognizer.dynamicType === aClass, "Gesture recognizer should be correct type")
+        XCTAssertTrue(gestureRecognizer.dynamicType === T.self, "Gesture recognizer should be correct type")
     }
 }
