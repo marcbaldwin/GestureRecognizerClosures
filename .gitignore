@@ -1,5 +1,4 @@
 # Xcode
-#
 build/
 *.pbxuser
 !default.pbxuser
@@ -16,6 +15,3 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-*.xcworkspace
-!default.xcworkspace
-Pods/
