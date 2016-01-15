@@ -1,5 +1,9 @@
 # Gesture Recognizer Closures
-[![Build Status](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures.svg?branch=master)](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures) [![Platform](http://img.shields.io/cocoapods/p/GestureRecognizerClosures.svg?style=flat)](http://cocoadocs.org/docsets/GestureRecognizerClosures) [![Pod](http://img.shields.io/cocoapods/v/GestureRecognizerClosures.svg?style=flat)](https://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/CHANGELOG.md) [![License](http://img.shields.io/cocoapods/l/GestureRecognizerClosures.svg?style=flat)](http://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/LICENSE)
+![Swift 2](https://img.shields.io/badge/Swift-2-orange.svg)
+[![Platform](http://img.shields.io/cocoapods/p/GestureRecognizerClosures.svg?style=flat)](http://cocoadocs.org/docsets/GestureRecognizerClosures)
+[![License](http://img.shields.io/cocoapods/l/GestureRecognizerClosures.svg?style=flat)](http://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/LICENSE) 
+[![Pod](http://img.shields.io/cocoapods/v/GestureRecognizerClosures.svg?style=flat)](https://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/CHANGELOG.md)
+[![Build Status](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures.svg?branch=master)](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures) 
 
 [Closure](http://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html) support for handling gesture recognizers in Swift.
 
