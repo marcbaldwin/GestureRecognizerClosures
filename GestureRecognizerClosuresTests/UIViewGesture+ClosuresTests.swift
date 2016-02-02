@@ -56,6 +56,11 @@ class UIViewGestureClosureTests: XCTestCase {
         view.onPan { pan in }
         let _ = view.gestureRecognizers!.first as! UIPanGestureRecognizer
     }
+
+    func testOnScreenEdgePan() {
+        view.onScreenEdgePan{ pan in }
+        let _ = view.gestureRecognizers!.first as! UIScreenEdgePanGestureRecognizer
+    }
     
     func testOnPinch() {
         view.onPinch { pinch in }
