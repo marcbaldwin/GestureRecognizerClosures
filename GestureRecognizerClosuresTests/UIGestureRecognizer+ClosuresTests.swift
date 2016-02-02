@@ -34,6 +34,13 @@ class UIGestureRecognizerClosuresTests: XCTestCase {
         testGesture(gestureRecognizer)
     }
 
+    func testUIScreenEdgePanGestureRecognizerClosure() {
+        let gestureRecognizer = UIScreenEdgePanGestureRecognizer { gestureRecognizer in
+            self.gestureRecognizerPassedToClosure = gestureRecognizer
+        }
+        testGesture(gestureRecognizer)
+    }
+
     func testUISwipeGestureRecognizerClosure() {
         let gestureRecognizer = UISwipeGestureRecognizer(direction: .Left) { gestureRecognizer in
             self.gestureRecognizerPassedToClosure = gestureRecognizer
