@@ -41,4 +41,8 @@ public extension UIView {
     public func onRotate(handler: (UIRotationGestureRecognizer) -> Void) {
         addGestureRecognizer(UIRotationGestureRecognizer(handler: handler))
     }
+
+    public func onScreenEdgePan(handler: (UIScreenEdgePanGestureRecognizer) -> Void) {
+        addGestureRecognizer(UIScreenEdgePanGestureRecognizer(handler: handler))
+    }
 }

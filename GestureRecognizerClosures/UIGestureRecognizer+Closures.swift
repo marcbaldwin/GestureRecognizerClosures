@@ -44,3 +44,10 @@ public extension UIRotationGestureRecognizer {
         self.init(handler: handler, type: UIRotationGestureRecognizer.self)
     }
 }
+
+public extension UIScreenEdgePanGestureRecognizer {
+
+    public convenience init(handler: (UIScreenEdgePanGestureRecognizer) -> Void) {
+        self.init(handler: handler, type: UIScreenEdgePanGestureRecognizer.self)
+    }
+}
