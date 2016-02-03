@@ -59,8 +59,8 @@ class UIGestureRecognizerClosuresTests: XCTestCase {
 private extension UIGestureRecognizerClosuresTests {
 
     private func testGesture<T: UIGestureRecognizer>(gestureRecognizer: T) {
-        let handler: GestureClosure<T>  = gestureRecognizer.handler()
-        handler.handleGesture(gestureRecognizer)
+        let handler: ClosureHandler<T> = gestureRecognizer.handler()
+        handler.handle()
         expect(self.gestureRecognizerPassedToClosure).to(equal(gestureRecognizer))
     }
 }
