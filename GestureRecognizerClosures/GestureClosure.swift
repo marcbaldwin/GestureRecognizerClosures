@@ -6,7 +6,7 @@ internal extension UIGestureRecognizer {
 
     internal convenience init<T: UIGestureRecognizer>(handler: (T) -> Void, type: T.Type) {
         let handler = ClosureHandler<T>(handler: handler)
-        self.init(target: handler, action: "handle")
+        self.init(target: handler, action: ClosureHandlerSelector)
         handler.control = (self as! T)
         setHandler(handler)
     }

@@ -1,3 +1,5 @@
+internal let ClosureHandlerSelector = Selector("handle")
+
 internal class ClosureHandler<T: AnyObject>: NSObject {
 
     internal let handler: (T) -> Void

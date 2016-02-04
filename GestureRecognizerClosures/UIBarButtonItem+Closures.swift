@@ -10,11 +10,16 @@ public extension UIBarButtonItem {
     }
 
     public convenience init(title: String?, style: UIBarButtonItemStyle, handler: (UIBarButtonItem) -> Void) {
-        self.init()
-        self.title = title
-        self.style = style
-        self.handler = ClosureHandler(handler: handler, control: self)
-        self.target = self.handler
-        self.action = "handle"
+        let handler = ClosureHandler(handler: handler)
+        self.init(title: title, style: style, target: handler, action: ClosureHandlerSelector)
+        handler.control = self
+        self.handler = handler
+    }
+
+    public convenience init(barButtonSystemItem systemItem: UIBarButtonSystemItem, handler: (UIBarButtonItem) -> Void) {
+        let handler = ClosureHandler(handler: handler)
+        self.init(barButtonSystemItem: systemItem, target: handler, action: ClosureHandlerSelector)
+        handler.control = self
+        self.handler = handler
     }
 }
