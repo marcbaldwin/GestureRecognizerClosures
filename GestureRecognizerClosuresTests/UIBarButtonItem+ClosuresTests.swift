@@ -19,33 +19,22 @@ class UIBarButtonItemClosuresTests: XCTestCase {
             self.expectation = true
         }
 
-        let handler = barButtonItem.target as? ClosureHandler<UIBarButtonItem>
-        handler?.handle()
-
         expect(barButtonItem.image).to(equal(image))
         expect(barButtonItem.landscapeImagePhone).to(equal(landscapeImage))
         expect(barButtonItem.style).to(equal(style))
-        expect(handler).to(beIdenticalTo(barButtonItem.handler))
-        expect(barButtonItem.action).to(equal(ClosureHandlerSelector))
-        expect(self.expectation).to(beTrue())
+        testHandler(barButtonItem)
     }
 
     func test_initWithTitleStyleAndClosure() {
-
         let title = "Next"
         let style =  UIBarButtonItemStyle.Plain
         let barButtonItem = UIBarButtonItem(title: title, style: style) { barButtonItem in
             self.expectation = true
         }
 
-        let handler = barButtonItem.target as? ClosureHandler<UIBarButtonItem>
-        handler?.handle()
-
         expect(barButtonItem.title).to(equal(title))
         expect(barButtonItem.style).to(equal(style))
-        expect(handler).to(beIdenticalTo(barButtonItem.handler))
-        expect(barButtonItem.action).to(equal(ClosureHandlerSelector))
-        expect(self.expectation).to(beTrue())
+        testHandler(barButtonItem)
     }
 
     func test_initWithBarButtonSystemItemAndClosure() {
@@ -54,12 +43,19 @@ class UIBarButtonItemClosuresTests: XCTestCase {
             self.expectation = true
         }
 
-        let handler = barButtonItem.target as? ClosureHandler<UIBarButtonItem>
-        handler?.handle()
+        // There is currently no way to verify that the UIBarButtonSystemItem is set correctly
+        testHandler(barButtonItem)
+    }
+}
 
-        // No way to verify the UIBarButtonSystemItem is correct
-        expect(handler).to(beIdenticalTo(barButtonItem.handler))
-        expect(barButtonItem.action).to(equal(ClosureHandlerSelector))
+private extension UIBarButtonItemClosuresTests {
+
+    func testHandler(barButtonItem: UIBarButtonItem) {
+        barButtonItem.handler?(barButtonItem)
         expect(self.expectation).to(beTrue())
+
+        let handler = barButtonItem.target as? ClosureHandler<UIBarButtonItem>
+        expect(handler).to(beIdenticalTo(barButtonItem.closureHandler))
+        expect(barButtonItem.action).to(equal(ClosureHandlerSelector))
     }
 }
