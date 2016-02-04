@@ -18,6 +18,7 @@ internal extension UIBarButtonItem {
 
 public extension UIBarButtonItem {
 
+    /// A handler that is invoked when the item is selected
     public var handler: ((UIBarButtonItem) -> Void)? {
         get { return closureHandler?.handler }
         set {
@@ -33,16 +34,25 @@ public extension UIBarButtonItem {
         }
     }
 
+    /**
+        Initializes a new item using the specified images, style and handler
+     */
     public convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItemStyle, handler: (UIBarButtonItem) -> Void) {
         self.init(image: image, landscapeImagePhone: landscapeImagePhone, style: style, target: nil, action: nil)
         initClosureHandler(handler)
     }
 
+    /**
+        Initializes a new item using the specified title, style and handler
+     */
     public convenience init(title: String?, style: UIBarButtonItemStyle, handler: (UIBarButtonItem) -> Void) {
         self.init(title: title, style: style, target: nil, action: nil)
         initClosureHandler(handler)
     }
 
+    /**
+        Initializes a new item containing the specified system item and using the specified handler
+     */
     public convenience init(barButtonSystemItem systemItem: UIBarButtonSystemItem, handler: (UIBarButtonItem) -> Void) {
         self.init(barButtonSystemItem: systemItem, target: nil, action: nil)
         initClosureHandler(handler)
