@@ -11,6 +11,25 @@ class UIBarButtonItemClosuresTests: XCTestCase {
         expectation = false
     }
 
+    func test_initWithImageLandscapeImagePhoneStyleAndClosure() {
+        let image = UIImage()
+        let landscapeImage = UIImage()
+        let style =  UIBarButtonItemStyle.Plain
+        let barButtonItem = UIBarButtonItem(image: image, landscapeImagePhone: landscapeImage, style: style) { barButtonItem in
+            self.expectation = true
+        }
+
+        let handler = barButtonItem.target as? ClosureHandler<UIBarButtonItem>
+        handler?.handle()
+
+        expect(barButtonItem.image).to(equal(image))
+        expect(barButtonItem.landscapeImagePhone).to(equal(landscapeImage))
+        expect(barButtonItem.style).to(equal(style))
+        expect(handler).to(beIdenticalTo(barButtonItem.handler))
+        expect(barButtonItem.action).to(equal(ClosureHandlerSelector))
+        expect(self.expectation).to(beTrue())
+    }
+
     func test_initWithTitleStyleAndClosure() {
 
         let title = "Next"

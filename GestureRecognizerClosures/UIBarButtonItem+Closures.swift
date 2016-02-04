@@ -9,6 +9,13 @@ public extension UIBarButtonItem {
         set { objc_setAssociatedObject(self, &HandlerKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
 
+    public convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItemStyle, handler: (UIBarButtonItem) -> Void) {
+        let handler = ClosureHandler(handler: handler)
+        self.init(image: image, landscapeImagePhone: landscapeImagePhone, style: style, target: handler, action: ClosureHandlerSelector)
+        handler.control = self
+        self.handler = handler
+    }
+
     public convenience init(title: String?, style: UIBarButtonItemStyle, handler: (UIBarButtonItem) -> Void) {
         let handler = ClosureHandler(handler: handler)
         self.init(title: title, style: style, target: handler, action: ClosureHandlerSelector)
