@@ -65,4 +65,12 @@ public extension UIBarButtonItem {
         self.init(barButtonSystemItem: systemItem, target: nil, action: nil)
         initClosureHandler(handler)
     }
+
+    /**
+        Initializes a new item containing the specified view and using the specified handler
+     */
+    public convenience init(customView: UIView, handler: (UIBarButtonItem) -> Void) {
+        self.init(customView: customView)
+        initClosureHandler(handler)
+    }
 }

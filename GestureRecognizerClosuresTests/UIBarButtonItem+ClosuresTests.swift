@@ -58,6 +58,16 @@ class UIBarButtonItemClosuresTests: XCTestCase {
         // There is currently no way to verify that the UIBarButtonSystemItem is set correctly
         testHandler(barButtonItem)
     }
+
+    func test_initWithViewAndClosure() {
+        let view = UIView()
+        let barButtonItem = UIBarButtonItem(customView: view) { barButtonItem in
+            self.expectation = true
+        }
+
+        expect(barButtonItem.customView).to(equal(view))
+        testHandler(barButtonItem)
+    }
 }
 
 private extension UIBarButtonItemClosuresTests {
