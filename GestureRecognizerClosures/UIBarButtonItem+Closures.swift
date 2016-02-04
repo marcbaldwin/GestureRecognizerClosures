@@ -35,6 +35,14 @@ public extension UIBarButtonItem {
     }
 
     /**
+        Initializes a new item using the specified image, style and handler
+     */
+    public convenience init(image: UIImage?, style: UIBarButtonItemStyle, handler: (UIBarButtonItem) -> Void) {
+        self.init(image: image, style: style, target: nil, action: nil)
+        initClosureHandler(handler)
+    }
+
+    /**
         Initializes a new item using the specified images, style and handler
      */
     public convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItemStyle, handler: (UIBarButtonItem) -> Void) {

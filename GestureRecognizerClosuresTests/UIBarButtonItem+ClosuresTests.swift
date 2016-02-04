@@ -11,6 +11,18 @@ class UIBarButtonItemClosuresTests: XCTestCase {
         expectation = false
     }
 
+    func test_initWithImageAndStyleAndClosure() {
+        let image = UIImage()
+        let style =  UIBarButtonItemStyle.Plain
+        let barButtonItem = UIBarButtonItem(image: image, style: style) { barButtonItem in
+            self.expectation = true
+        }
+
+        expect(barButtonItem.image).to(equal(image))
+        expect(barButtonItem.style).to(equal(style))
+        testHandler(barButtonItem)
+    }
+
     func test_initWithImageLandscapeImagePhoneStyleAndClosure() {
         let image = UIImage()
         let landscapeImage = UIImage()
