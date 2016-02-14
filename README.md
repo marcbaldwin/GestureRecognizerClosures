@@ -5,16 +5,18 @@
 [![Pod](http://img.shields.io/cocoapods/v/GestureRecognizerClosures.svg?style=flat)](https://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/CHANGELOG.md)
 [![Build Status](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures.svg?branch=master)](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures)
 
-[Closure](http://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html) support for handling gesture recognizers in Swift.
+[Closure](http://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html) handlers for gesture recognizers and bar button items.
 
-`GestureRecognizerClosures` supports all subclasses of [`UIGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIGestureRecognizer_Class) including:
-- [`UILongPressGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UILongPressGestureRecognizer_Class)
-- [`UIPanGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPanGestureRecognizer_Class)
-- [`UIPinchGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPinchGestureRecognizer_Class)
-- [`UIRotationGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIRotateGestureRecognizer_Class)
-- [`UISwipeGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UISwipeGestureRecognizer_Class)
-- [`UITapGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITapGestureRecognizer_Class)
-- [`UIScreenEdgePanGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIScreenEdgePanGestureRecognizer_Class)
+`GestureRecognizerClosures` supports
+- [`UIGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIGestureRecognizer_Class)
+ - [`UILongPressGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UILongPressGestureRecognizer_Class)
+ - [`UIPinchGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPinchGestureRecognizer_Class)
+ - [`UIRotationGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIRotateGestureRecognizer_Class)
+ - [`UISwipeGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UISwipeGestureRecognizer_Class)
+ - [`UITapGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITapGestureRecognizer_Class)
+ - [`UIPanGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPanGestureRecognizer_Class)
+   - [`UIScreenEdgePanGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIScreenEdgePanGestureRecognizer_Class)
+- [`UIBarButtonItem`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIBarButtonItem_Class/)
 
 ## Examples
 Example of handling a single tap
@@ -91,6 +93,13 @@ Example of handling a swipe down
 ```Swift
 view.onSwipeDown { _ in
     // Do something
+}
+```
+
+`UIBarButtonItem` example
+```Swift
+let barButtonItem = UIBarButtonItem(title: "Save", style: .Plain) { [unowned self] _ in
+  self.save()
 }
 ```
 

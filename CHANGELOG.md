@@ -1,33 +1,50 @@
-# GestureRecognizerClosures - Change Log
+# Change Log
 
-All noteable changes to `GestureRecognizerClosures` will be documented in this file.
+All notable changes to `GestureRecognizerClosures` will be documented in this file.
 
 `GestureRecognizerClosures` adheres to [Semantic Versioning](http://semver.org/).
 
 ## Release Summary
-- 2.1.0 - Add closure support for `UIScreenEdgePanGestureRecognizer`
-- 2.0.0 - Xcode 7 and Swift 2
-- 1.1.0 - Adds utility functions to `UIView` for adding closures for `UIGestureRecognizer`
-- 1.0.0 - Adds closure initializer to `UIGestureRecognizer`
+- 2.2.0 - Closure support for `UIBarButtonItem`
+- 2.1.0 - Closure support for `UIScreenEdgePanGestureRecognizer`
+- 2.0.0 - Swift 2 and Xcode 7
+- 1.1.0 - `UIView` convenience functions to add closure `UIGestureRecognizers`
+- 1.0.0 - Closure initializers for `UIGestureRecognizer`
 
-## [2.1.0 - Support for UIScreenEdgePanGestureRecognizer](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.1.0)
-Released on 2016-02-2
+## [2.2.0 - Closure support for UIBarButtonItem](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.2.0)
+*Released on 2016-02-14*
 
-### Added
-- Convenience init to `UIScreenEdgePanGestureRecognizer` that takes a closure
-- Utility function to `UIView` to add a `UIScreenEdgePanGestureRecognizer` that takes a closure
+Allows a specified closure to be invoked when a `UIBarButtonItem` is selected.
 
-## [2.0.0 - Swift 2](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.0.0)
-Released on 2015-09-16
+#### Implemented
+- Convenience initializers for `UIBarButtonItem` that take a closure
+- Handler property for `UIBarButtonItem` that is invoked when the item is selected
 
-### Breaking Changes
+## [2.1.0 - Closure support for UIScreenEdgePanGestureRecognizer](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.1.0)
+*Released 2016-02-2*
+
+Allows a specified closure to be invoked when a `UIScreenEdgePanGestureRecognizer` is recognized.
+
+#### Implemented
+- Convenience initializer for `UIScreenEdgePanGestureRecognizer` that takes a closure
+- Convenience function to add a closure `UIScreenEdgePanGestureRecognizer` to a `UIView`
+
+## [2.0.0 - Swift 2 and Xcode 7](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.0.0)
+*Released 2015-09-16*
+
+Updated code to Swift 2 syntax.
+
+#### Breaking Changes
 - Compile against Swift 2
+- Update project to Xcode 7
 
-## [1.1.0 - UIView Utility Functions](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/1.1.0)
-Released on 2015-09-16
+## [1.1.0 - UIView convenience functions to add closure UIGestureRecognizers](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/1.1.0)
+*Released 2015-09-16*
 
-### Added
-- The following utility functions to `UIView`
+Provides a convenient way to add closure `UIGestureRecognizers` to a `UIView`.
+
+#### Implemented
+- The following convenience to `UIView`
   - onTap
   - onDoubleTap
   - onLongPress
@@ -40,7 +57,9 @@ Released on 2015-09-16
   - onSwipeDown
 
 ## [1.0.0 - Closure Initializer](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/1.0.0)
-Released on 2015-08-26
+*Released 2015-08-26*
 
-### Added
-- Initializer to `UIGestureRecognizer` that accepts a closure as its only parameter
+Allows a specified closure to be invoked when instances of `UIGestureRecognizer` are recognized.
+
+#### Implemented
+- Initializer for `UIGestureRecognizer` that takes a closure

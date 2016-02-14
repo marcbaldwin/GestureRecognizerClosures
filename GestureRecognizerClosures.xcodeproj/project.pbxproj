@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		099B251F1ED147F52612EBB2 /* Pods_GestureRecognizerClosuresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582EEE9C4615D853BA98BBC2 /* Pods_GestureRecognizerClosuresTests.framework */; };
 		A03BAB641C470E6B00E8395F /* GestureClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03BAB631C470E6B00E8395F /* GestureClosure.swift */; };
+		A0641E971C61718E002C8160 /* UIBarButtonItem+Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0641E961C61718E002C8160 /* UIBarButtonItem+Closures.swift */; };
+		A0641E991C6171B4002C8160 /* UIBarButtonItem+ClosuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0641E981C6171B4002C8160 /* UIBarButtonItem+ClosuresTests.swift */; };
 		A070B78D1BA201CB00EF265E /* UIView+Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070B78C1BA201CB00EF265E /* UIView+Closures.swift */; };
 		A083DE171BA9EE6B001E867F /* UIViewGesture+ClosuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083DE161BA9EE6B001E867F /* UIViewGesture+ClosuresTests.swift */; };
+		A0AE34F41C62C4A7004BD6B7 /* ClosureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE34F31C62C4A7004BD6B7 /* ClosureHandler.swift */; };
 		A0D21BEA1BAA0F2A0085219D /* GestureRecognizerClosures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E0A2D01B8D186F00E9F7D0 /* GestureRecognizerClosures.framework */; };
 		A0E0A2D61B8D186F00E9F7D0 /* GestureRecognizerClosures.h in Headers */ = {isa = PBXBuildFile; fileRef = A0E0A2D51B8D186F00E9F7D0 /* GestureRecognizerClosures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0E0A2E31B8D186F00E9F7D0 /* UIGestureRecognizer+ClosuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0A2E21B8D186F00E9F7D0 /* UIGestureRecognizer+ClosuresTests.swift */; };
@@ -32,8 +35,11 @@
 		582EEE9C4615D853BA98BBC2 /* Pods_GestureRecognizerClosuresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GestureRecognizerClosuresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01ED04C284DEA3BA44310FB /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureRecognizerClosuresTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A03BAB631C470E6B00E8395F /* GestureClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureClosure.swift; sourceTree = "<group>"; };
+		A0641E961C61718E002C8160 /* UIBarButtonItem+Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Closures.swift"; sourceTree = "<group>"; };
+		A0641E981C6171B4002C8160 /* UIBarButtonItem+ClosuresTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+ClosuresTests.swift"; sourceTree = "<group>"; };
 		A070B78C1BA201CB00EF265E /* UIView+Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Closures.swift"; sourceTree = "<group>"; };
 		A083DE161BA9EE6B001E867F /* UIViewGesture+ClosuresTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewGesture+ClosuresTests.swift"; sourceTree = "<group>"; };
+		A0AE34F31C62C4A7004BD6B7 /* ClosureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureHandler.swift; sourceTree = "<group>"; };
 		A0E0A2D01B8D186F00E9F7D0 /* GestureRecognizerClosures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GestureRecognizerClosures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E0A2D41B8D186F00E9F7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E0A2D51B8D186F00E9F7D0 /* GestureRecognizerClosures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerClosures.h; sourceTree = "<group>"; };
@@ -104,7 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				A0E0A2D51B8D186F00E9F7D0 /* GestureRecognizerClosures.h */,
+				A0AE34F31C62C4A7004BD6B7 /* ClosureHandler.swift */,
 				A03BAB631C470E6B00E8395F /* GestureClosure.swift */,
+				A0641E961C61718E002C8160 /* UIBarButtonItem+Closures.swift */,
 				A0E0A2EC1B8D189D00E9F7D0 /* UIGestureRecognizer+Closures.swift */,
 				A070B78C1BA201CB00EF265E /* UIView+Closures.swift */,
 				A0E0A2D31B8D186F00E9F7D0 /* Supporting Files */,
@@ -123,6 +131,7 @@
 		A0E0A2DF1B8D186F00E9F7D0 /* GestureRecognizerClosuresTests */ = {
 			isa = PBXGroup;
 			children = (
+				A0641E981C6171B4002C8160 /* UIBarButtonItem+ClosuresTests.swift */,
 				A0E0A2E21B8D186F00E9F7D0 /* UIGestureRecognizer+ClosuresTests.swift */,
 				A083DE161BA9EE6B001E867F /* UIViewGesture+ClosuresTests.swift */,
 				A0E0A2E01B8D186F00E9F7D0 /* Supporting Files */,
@@ -300,7 +309,9 @@
 			files = (
 				A070B78D1BA201CB00EF265E /* UIView+Closures.swift in Sources */,
 				A0E0A2ED1B8D189D00E9F7D0 /* UIGestureRecognizer+Closures.swift in Sources */,
+				A0641E971C61718E002C8160 /* UIBarButtonItem+Closures.swift in Sources */,
 				A03BAB641C470E6B00E8395F /* GestureClosure.swift in Sources */,
+				A0AE34F41C62C4A7004BD6B7 /* ClosureHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0641E991C6171B4002C8160 /* UIBarButtonItem+ClosuresTests.swift in Sources */,
 				A0E0A2E31B8D186F00E9F7D0 /* UIGestureRecognizer+ClosuresTests.swift in Sources */,
 				A083DE171BA9EE6B001E867F /* UIViewGesture+ClosuresTests.swift in Sources */,
 			);
