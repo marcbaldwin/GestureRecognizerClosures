@@ -1,6 +1,6 @@
 # Change Log
 
-All noteable changes to `GestureRecognizerClosures` will be documented in this file.
+All notable changes to `GestureRecognizerClosures` will be documented in this file.
 
 `GestureRecognizerClosures` adheres to [Semantic Versioning](http://semver.org/).
 
@@ -12,18 +12,18 @@ All noteable changes to `GestureRecognizerClosures` will be documented in this f
 - 1.0.0 - Closure initializers for `UIGestureRecognizer`
 
 ## [2.2.0 - Closure support for UIBarButtonItem](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.2.0)
-*Released 2016-02-8*
+*Released on 2016-02-14*
 
 Allows a specified closure to be invoked when a `UIBarButtonItem` is selected.
 
 #### Implemented
 - Convenience initializers for `UIBarButtonItem` that take a closure
-- Handler property for `UIBarButtonItem`
+- Handler property for `UIBarButtonItem` that is invoked when the item is selected
 
 ## [2.1.0 - Closure support for UIScreenEdgePanGestureRecognizer](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.1.0)
 *Released 2016-02-2*
 
-Allows a specified closure to be invoked when a `UIScreenEdgePanGestureRecognizer` is recognized
+Allows a specified closure to be invoked when a `UIScreenEdgePanGestureRecognizer` is recognized.
 
 #### Implemented
 - Convenience initializer for `UIScreenEdgePanGestureRecognizer` that takes a closure
@@ -41,7 +41,7 @@ Updated code to Swift 2 syntax.
 ## [1.1.0 - UIView convenience functions to add closure UIGestureRecognizers](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/1.1.0)
 *Released 2015-09-16*
 
-Provides a convenient way to add closure `UIGestureRecognizers` to a `UIView`
+Provides a convenient way to add closure `UIGestureRecognizers` to a `UIView`.
 
 #### Implemented
 - The following convenience to `UIView`
@@ -59,7 +59,7 @@ Provides a convenient way to add closure `UIGestureRecognizers` to a `UIView`
 ## [1.0.0 - Closure Initializer](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/1.0.0)
 *Released 2015-08-26*
 
-Allows a specified closure to be invoked when instances of `UIGestureRecognizer` are recognized
+Allows a specified closure to be invoked when instances of `UIGestureRecognizer` are recognized.
 
 #### Implemented
 - Initializer for `UIGestureRecognizer` that takes a closure
