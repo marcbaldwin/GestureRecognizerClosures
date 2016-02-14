@@ -9,10 +9,12 @@ internal extension UIBarButtonItem {
         set { objc_setAssociatedObject(self, &HandlerKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
 
-    internal func initClosureHandler(handler: (UIBarButtonItem) -> Void) {
-        closureHandler = ClosureHandler(handler: handler, control: self)
-        target = closureHandler
-        action = ClosureHandlerSelector
+    internal func initClosureHandler(handler: ((UIBarButtonItem) -> Void)?) {
+        if let handler = handler {
+            closureHandler = ClosureHandler(handler: handler, control: self)
+            target = closureHandler
+            action = ClosureHandlerSelector
+        }
     }
 }
 
@@ -37,7 +39,7 @@ public extension UIBarButtonItem {
     /**
         Initializes a new item using the specified image, style and handler
      */
-    public convenience init(image: UIImage?, style: UIBarButtonItemStyle, handler: (UIBarButtonItem) -> Void) {
+    public convenience init(image: UIImage?, style: UIBarButtonItemStyle, handler: ((UIBarButtonItem) -> Void)? = nil) {
         self.init(image: image, style: style, target: nil, action: nil)
         initClosureHandler(handler)
     }
@@ -45,7 +47,7 @@ public extension UIBarButtonItem {
     /**
         Initializes a new item using the specified images, style and handler
      */
-    public convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItemStyle, handler: (UIBarButtonItem) -> Void) {
+    public convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItemStyle, handler: ((UIBarButtonItem) -> Void)? = nil) {
         self.init(image: image, landscapeImagePhone: landscapeImagePhone, style: style, target: nil, action: nil)
         initClosureHandler(handler)
     }
@@ -53,7 +55,7 @@ public extension UIBarButtonItem {
     /**
         Initializes a new item using the specified title, style and handler
      */
-    public convenience init(title: String?, style: UIBarButtonItemStyle, handler: (UIBarButtonItem) -> Void) {
+    public convenience init(title: String?, style: UIBarButtonItemStyle, handler: ((UIBarButtonItem) -> Void)? = nil) {
         self.init(title: title, style: style, target: nil, action: nil)
         initClosureHandler(handler)
     }
@@ -61,7 +63,7 @@ public extension UIBarButtonItem {
     /**
         Initializes a new item containing the specified system item and using the specified handler
      */
-    public convenience init(barButtonSystemItem systemItem: UIBarButtonSystemItem, handler: (UIBarButtonItem) -> Void) {
+    public convenience init(barButtonSystemItem systemItem: UIBarButtonSystemItem, handler: ((UIBarButtonItem) -> Void)? = nil) {
         self.init(barButtonSystemItem: systemItem, target: nil, action: nil)
         initClosureHandler(handler)
     }
