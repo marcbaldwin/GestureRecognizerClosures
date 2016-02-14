@@ -11,6 +11,20 @@ class UIBarButtonItemClosuresTests: XCTestCase {
         expectation = false
     }
 
+    func test_handlerProperty() {
+        let image = UIImage()
+        let style =  UIBarButtonItemStyle.Plain
+        let barButtonItem = UIBarButtonItem(image: image, style: style)
+        expect(barButtonItem.target).to(beNil())
+        expect(barButtonItem.handler).to(beNil())
+
+        barButtonItem.handler = { barButtonItem in
+            self.expectation = true
+        }
+
+        testHandler(barButtonItem)
+    }
+
     func test_initWithImageAndStyleAndClosure() {
         let image = UIImage()
         let style =  UIBarButtonItemStyle.Plain
