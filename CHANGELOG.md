@@ -5,11 +5,21 @@ All notable changes to `GestureRecognizerClosures` will be documented in this fi
 `GestureRecognizerClosures` adheres to [Semantic Versioning](http://semver.org/).
 
 ## Release Summary
+- 2.3.0 - Closure support for `UIControl`
 - 2.2.0 - Closure support for `UIBarButtonItem`
 - 2.1.0 - Closure support for `UIScreenEdgePanGestureRecognizer`
 - 2.0.0 - Swift 2 and Xcode 7
 - 1.1.0 - `UIView` convenience functions to add closure `UIGestureRecognizers`
 - 1.0.0 - Closure initializers for `UIGestureRecognizer`
+
+## [2.3.0 - Closure support for UIControl](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.3.0)
+*Released on 2016-02-22*
+
+Allows a specified closure to be invoked for particular `UIControlEvents` on a `UIControl`.
+
+#### Implemented
+- Function to add handler to a `UIControl` for selected `UIControlEvents`
+- Function to remove handler from a `UIControl`
 
 ## [2.2.0 - Closure support for UIBarButtonItem](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/2.2.0)
 *Released on 2016-02-14*
