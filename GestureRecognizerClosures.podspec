@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name         = "GestureRecognizerClosures"
-  s.version      = "2.2.0"
+  s.version      = "2.3.0"
   s.license      = "MIT"
-  s.summary      = "Closure support for handling gesture recognizers in Swift."
+  s.summary      = "Closure handlers for gesture recognizers, controls and bar button items."
   s.homepage     = "https://github.com/marcbaldwin/GestureRecognizerClosures"
   s.author       = { "Marc Baldwin" => "marc.baldwin88@gmail.com" }
   s.source       = { :git => "https://github.com/marcbaldwin/GestureRecognizerClosures.git", :tag => s.version }
