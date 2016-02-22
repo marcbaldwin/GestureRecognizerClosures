@@ -5,7 +5,7 @@
 [![Pod](http://img.shields.io/cocoapods/v/GestureRecognizerClosures.svg?style=flat)](https://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/CHANGELOG.md)
 [![Build Status](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures.svg?branch=master)](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures)
 
-[Closure](http://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html) handlers for gesture recognizers and bar button items.
+[Closure](http://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html) handlers for gesture recognizers, controls and bar button items.
 
 `GestureRecognizerClosures` supports
 - [`UIGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIGestureRecognizer_Class)
@@ -17,8 +17,9 @@
  - [`UIPanGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPanGestureRecognizer_Class)
    - [`UIScreenEdgePanGestureRecognizer`](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIScreenEdgePanGestureRecognizer_Class)
 - [`UIBarButtonItem`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIBarButtonItem_Class/)
+- [`UIControl`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIControl_Class/)
 
-## Examples
+## Gesture Recognizer Examples
 Example of handling a single tap
 ```Swift
 view.onTap { _ in
@@ -96,10 +97,17 @@ view.onSwipeDown { _ in
 }
 ```
 
-`UIBarButtonItem` example
+## Bar Button Item Example
 ```Swift
 let barButtonItem = UIBarButtonItem(title: "Save", style: .Plain) { [unowned self] _ in
   self.save()
+}
+```
+
+## Control Example
+```Swift
+slider.on(.ValueChanged) { [unowned self] _ in
+  self.volume = self.slider.value
 }
 ```
 
