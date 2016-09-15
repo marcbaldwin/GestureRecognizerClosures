@@ -14,6 +14,7 @@ All notable changes to `GestureRecognizerClosures` will be documented in this fi
 - 1.0.0 - Closure initializers for `UIGestureRecognizer`
 
 ## [3.0.0 - Swift 3 support](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/3.0.0)
+*Released on 2016-09-16*
 
 Updated code to Swift 3 syntax.
 
