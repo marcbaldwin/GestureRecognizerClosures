@@ -42,7 +42,7 @@ class UIGestureRecognizerClosuresTests: XCTestCase {
     }
 
     func testUISwipeGestureRecognizerClosure() {
-        let gestureRecognizer = UISwipeGestureRecognizer(direction: .Left) { gestureRecognizer in
+        let gestureRecognizer = UISwipeGestureRecognizer(direction: .left) { gestureRecognizer in
             self.gestureRecognizerPassedToClosure = gestureRecognizer
         }
         testGesture(gestureRecognizer)
@@ -57,8 +57,7 @@ class UIGestureRecognizerClosuresTests: XCTestCase {
 }
 
 private extension UIGestureRecognizerClosuresTests {
-
-    private func testGesture<T: UIGestureRecognizer>(gestureRecognizer: T) {
+    func testGesture<T: UIGestureRecognizer>(_ gestureRecognizer: T) {
         let handler: ClosureHandler<T> = gestureRecognizer.handler()
         handler.handle()
         expect(self.gestureRecognizerPassedToClosure).to(equal(gestureRecognizer))
