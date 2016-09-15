@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		099B251F1ED147F52612EBB2 /* Pods_GestureRecognizerClosuresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582EEE9C4615D853BA98BBC2 /* Pods_GestureRecognizerClosuresTests.framework */; };
+		984164ADE4DE575EC3B5D896 /* Pods_GestureRecognizerClosuresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C095D11B5773A21D2CD57048 /* Pods_GestureRecognizerClosuresTests.framework */; };
 		A00B32241C7A858F00286DC8 /* UIControl+ClosuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B32231C7A858F00286DC8 /* UIControl+ClosuresTests.swift */; };
 		A00B32261C7A860200286DC8 /* UIControl+Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B32251C7A860200286DC8 /* UIControl+Closures.swift */; };
 		A03BAB641C470E6B00E8395F /* GestureClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03BAB631C470E6B00E8395F /* GestureClosure.swift */; };
@@ -33,11 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		249603040906260B586F9885 /* Pods-GestureRecognizerClosuresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureRecognizerClosuresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests.release.xcconfig"; sourceTree = "<group>"; };
-		582EEE9C4615D853BA98BBC2 /* Pods_GestureRecognizerClosuresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GestureRecognizerClosuresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6408EB2F0B42B6369E193D /* Pods-GestureRecognizerClosuresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureRecognizerClosuresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests.release.xcconfig"; sourceTree = "<group>"; };
 		A00B32231C7A858F00286DC8 /* UIControl+ClosuresTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+ClosuresTests.swift"; sourceTree = "<group>"; };
 		A00B32251C7A860200286DC8 /* UIControl+Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Closures.swift"; sourceTree = "<group>"; };
-		A01ED04C284DEA3BA44310FB /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureRecognizerClosuresTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A03BAB631C470E6B00E8395F /* GestureClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureClosure.swift; sourceTree = "<group>"; };
 		A0641E961C61718E002C8160 /* UIBarButtonItem+Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Closures.swift"; sourceTree = "<group>"; };
 		A0641E981C6171B4002C8160 /* UIBarButtonItem+ClosuresTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+ClosuresTests.swift"; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		A0E0A2E11B8D186F00E9F7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E0A2E21B8D186F00E9F7D0 /* UIGestureRecognizer+ClosuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+ClosuresTests.swift"; sourceTree = "<group>"; };
 		A0E0A2EC1B8D189D00E9F7D0 /* UIGestureRecognizer+Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+Closures.swift"; sourceTree = "<group>"; };
+		A27428F363D386D9A572F738 /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureRecognizerClosuresTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C095D11B5773A21D2CD57048 /* Pods_GestureRecognizerClosuresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GestureRecognizerClosuresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,28 +66,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D21BEA1BAA0F2A0085219D /* GestureRecognizerClosures.framework in Frameworks */,
-				099B251F1ED147F52612EBB2 /* Pods_GestureRecognizerClosuresTests.framework in Frameworks */,
+				984164ADE4DE575EC3B5D896 /* Pods_GestureRecognizerClosuresTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		202E214FA1F64C5C8388E500 /* Pods */ = {
+		3D6A74ABE821164C938DCA9B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A01ED04C284DEA3BA44310FB /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */,
-				249603040906260B586F9885 /* Pods-GestureRecognizerClosuresTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9E61151A260762BB803A2727 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				582EEE9C4615D853BA98BBC2 /* Pods_GestureRecognizerClosuresTests.framework */,
+				C095D11B5773A21D2CD57048 /* Pods_GestureRecognizerClosuresTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4940F230570211C2C37F03C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A27428F363D386D9A572F738 /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */,
+				1D6408EB2F0B42B6369E193D /* Pods-GestureRecognizerClosuresTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A0E0A2C61B8D186F00E9F7D0 = {
@@ -96,8 +96,8 @@
 				A0E0A2D21B8D186F00E9F7D0 /* GestureRecognizerClosures */,
 				A0E0A2DF1B8D186F00E9F7D0 /* GestureRecognizerClosuresTests */,
 				A0E0A2D11B8D186F00E9F7D0 /* Products */,
-				202E214FA1F64C5C8388E500 /* Pods */,
-				9E61151A260762BB803A2727 /* Frameworks */,
+				4940F230570211C2C37F03C9 /* Pods */,
+				3D6A74ABE821164C938DCA9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,12 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0E0A2E91B8D186F00E9F7D0 /* Build configuration list for PBXNativeTarget "GestureRecognizerClosuresTests" */;
 			buildPhases = (
-				0D9E5D75AC0569D863D41EAE /* Check Pods Manifest.lock */,
+				2A58166B6C5E83F96DAF56AA /* [CP] Check Pods Manifest.lock */,
 				A0E0A2D71B8D186F00E9F7D0 /* Sources */,
 				A0E0A2D81B8D186F00E9F7D0 /* Frameworks */,
 				A0E0A2D91B8D186F00E9F7D0 /* Resources */,
-				561FB83714F10F01F64DA985 /* Embed Pods Frameworks */,
-				6B02AA73C3ECC039DCE65502 /* Copy Pods Resources */,
+				563DEE22680C0EAAEFC2F775 /* [CP] Embed Pods Frameworks */,
+				BA0F5918F3027ABA2D881FA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +214,16 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Marc Baldwin";
 				TargetAttributes = {
 					A0E0A2CF1B8D186F00E9F7D0 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					A0E0A2DA1B8D186F00E9F7D0 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -261,14 +263,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D9E5D75AC0569D863D41EAE /* Check Pods Manifest.lock */ = {
+		2A58166B6C5E83F96DAF56AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,14 +278,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		561FB83714F10F01F64DA985 /* Embed Pods Frameworks */ = {
+		563DEE22680C0EAAEFC2F775 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,14 +293,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6B02AA73C3ECC039DCE65502 /* Copy Pods Resources */ = {
+		BA0F5918F3027ABA2D881FA7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,8 +359,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -406,8 +410,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -427,6 +433,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -438,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -450,6 +458,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -458,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -469,14 +479,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.marcb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		A0E0A2EA1B8D186F00E9F7D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A01ED04C284DEA3BA44310FB /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */;
+			baseConfigurationReference = A27428F363D386D9A572F738 /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -485,17 +497,20 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.marcb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		A0E0A2EB1B8D186F00E9F7D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 249603040906260B586F9885 /* Pods-GestureRecognizerClosuresTests.release.xcconfig */;
+			baseConfigurationReference = 1D6408EB2F0B42B6369E193D /* Pods-GestureRecognizerClosuresTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GestureRecognizerClosuresTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.marcb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -9,7 +9,7 @@ internal extension UIBarButtonItem {
         set { objc_setAssociatedObject(self, &HandlerKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
 
-    internal func initClosureHandler(handler: ((UIBarButtonItem) -> Void)?) {
+    internal func initClosureHandler(_ handler: ((UIBarButtonItem) -> Void)?) {
         if let handler = handler {
             closureHandler = ClosureHandler(handler: handler, control: self)
             target = closureHandler
@@ -71,7 +71,7 @@ public extension UIBarButtonItem {
     /**
         Initializes a new item containing the specified view and using the specified handler
      */
-    public convenience init(customView: UIView, handler: (UIBarButtonItem) -> Void) {
+    public convenience init(customView: UIView, handler: @escaping (UIBarButtonItem) -> Void) {
         self.init(customView: customView)
         initClosureHandler(handler)
     }
