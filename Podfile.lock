@@ -1,10 +1,22 @@
 PODS:
-  - Nimble (3.0.0)
+  - Nimble (5.0.0-alpha.30p1)
 
 DEPENDENCIES:
-  - Nimble (= 3.0.0)
+  - Nimble (from `https://github.com/Quick/Nimble`, branch `master`)
+
+EXTERNAL SOURCES:
+  Nimble:
+    :branch: master
+    :git: https://github.com/Quick/Nimble
+
+CHECKOUT OPTIONS:
+  Nimble:
+    :commit: 197a46a5892340a2badc70af7f669b6aa4c8afa9
+    :git: https://github.com/Quick/Nimble
 
 SPEC CHECKSUMS:
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Nimble: c5b995b4cd57789ec44b0cfb79640fc00e61a8c7
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 32834ae43082c2e0ca0dd9270534b0a7c514debd
+
+COCOAPODS: 1.0.1
