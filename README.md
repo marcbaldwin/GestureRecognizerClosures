@@ -146,6 +146,14 @@ Then, run the following command:
 $ pod install
 ```
 
+### Use Carthage
+You can use [Carthage](github.com/carthage/carthage) to install `GestureRecognizerClosures ` by adding it to your `Cartfile`:
+
+```
+github "marcbaldwin/GestureRecognizerClosures"
+```
+
+
 ## Updating
 
 ### Use CocoaPods
