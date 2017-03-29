@@ -6,7 +6,9 @@ public extension UITapGestureRecognizer {
         Initializes a touch gesture-recognizer with the specificed number of taps, touches and handler
      */
     public convenience init(taps: Int = 1, touches: Int = 1, handler: @escaping (UITapGestureRecognizer) -> Void) {
-        self.init(handler: handler, type: UITapGestureRecognizer.self)
+        let handler = ClosureHandler<UITapGestureRecognizer>(handler: handler)
+        self.init(target: handler, action: ClosureHandlerSelector)
+        setHandler(self, handler: handler)
         numberOfTapsRequired = taps
         numberOfTouchesRequired = touches
     }
@@ -18,7 +20,9 @@ public extension UILongPressGestureRecognizer {
         Initializes a long press gesture recognizer with the specificed handler
      */
     public convenience init(handler: @escaping (UILongPressGestureRecognizer) -> Void) {
-        self.init(handler: handler, type: UILongPressGestureRecognizer.self)
+        let handler = ClosureHandler<UILongPressGestureRecognizer>(handler: handler)
+        self.init(target: handler, action: ClosureHandlerSelector)
+        setHandler(self, handler: handler)
     }
 }
 
@@ -28,7 +32,9 @@ public extension UISwipeGestureRecognizer {
         Initializes a swipe gesture recognizer with the specificed direction and handler
      */
     public convenience init(direction: UISwipeGestureRecognizerDirection, handler: @escaping (UISwipeGestureRecognizer) -> Void) {
-        self.init(handler: handler, type: UISwipeGestureRecognizer.self)
+        let handler = ClosureHandler<UISwipeGestureRecognizer>(handler: handler)
+        self.init(target: handler, action: ClosureHandlerSelector)
+        setHandler(self, handler: handler)
         self.direction = direction
     }
 }
@@ -39,7 +45,9 @@ public extension UIPanGestureRecognizer {
         Initializes a pan gesture recognizer with the specificed handler
      */
     public convenience init(handler: @escaping (UIPanGestureRecognizer) -> Void) {
-        self.init(handler: handler, type: UIPanGestureRecognizer.self)
+        let handler = ClosureHandler<UIPanGestureRecognizer>(handler: handler)
+        self.init(target: handler, action: ClosureHandlerSelector)
+        setHandler(self, handler: handler)
     }
 }
 
@@ -49,7 +57,9 @@ public extension UIPinchGestureRecognizer {
         Initializes a pinch gesture-recognizer with the specificed handler
      */
     public convenience init(handler: @escaping (UIPinchGestureRecognizer) -> Void) {
-        self.init(handler: handler, type: UIPinchGestureRecognizer.self)
+        let handler = ClosureHandler<UIPinchGestureRecognizer>(handler: handler)
+        self.init(target: handler, action: ClosureHandlerSelector)
+        setHandler(self, handler: handler)
     }
 }
 
@@ -59,7 +69,9 @@ public extension UIRotationGestureRecognizer {
         Initializes a rotation gesture-recognizer with the specificed handler
      */
     public convenience init(handler: @escaping (UIRotationGestureRecognizer) -> Void) {
-        self.init(handler: handler, type: UIRotationGestureRecognizer.self)
+        let handler = ClosureHandler<UIRotationGestureRecognizer>(handler: handler)
+        self.init(target: handler, action: ClosureHandlerSelector)
+        setHandler(self, handler: handler)
     }
 }
 
@@ -69,6 +81,8 @@ public extension UIScreenEdgePanGestureRecognizer {
         Initializes a screen edge pan gesture-recognizer with the specificed handler
      */
     public convenience init(handler: @escaping (UIScreenEdgePanGestureRecognizer) -> Void) {
-        self.init(handler: handler, type: UIScreenEdgePanGestureRecognizer.self)
+        let handler = ClosureHandler<UIScreenEdgePanGestureRecognizer>(handler: handler)
+        self.init(target: handler, action: ClosureHandlerSelector)
+        setHandler(self, handler: handler)
     }
 }
