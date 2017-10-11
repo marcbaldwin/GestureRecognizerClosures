@@ -5,6 +5,7 @@ All notable changes to `GestureRecognizerClosures` will be documented in this fi
 `GestureRecognizerClosures` adheres to [Semantic Versioning](http://semver.org/).
 
 ## Release Summary
+- 4.0.0 - Swift 4
 - 3.1.0 - Swift 3.1
 - 3.0.0 - Swift 3 and Xcode 8
 - 2.3.0 - Closure support for `UIControl`
@@ -14,11 +15,15 @@ All notable changes to `GestureRecognizerClosures` will be documented in this fi
 - 1.1.0 - `UIView` convenience functions to add closure `UIGestureRecognizers`
 - 1.0.0 - Closure initializers for `UIGestureRecognizer`
 
+## [4.0.0 - Swift 4 support](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/4.0.0)
+*Released on 2017-10-11*
+
+Updated to support Swift 3.1
+
 ## [3.1.0 - Swift 3.1 support](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/3.1.0)
 *Released on 2017-03-30*
 
 Updated to support Swift 3.1
-
 
 ## [3.0.0 - Swift 3 support](https://github.com/marcbaldwin/GestureRecognizerClosures/releases/tag/3.0.0)
 *Released on 2016-09-16*
