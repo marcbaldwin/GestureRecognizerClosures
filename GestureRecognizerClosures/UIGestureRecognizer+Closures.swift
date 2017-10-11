@@ -44,7 +44,7 @@ public extension UIPanGestureRecognizer {
     /**
         Initializes a pan gesture recognizer with the specificed handler
      */
-    public convenience init(handler: @escaping (UIPanGestureRecognizer) -> Void) {
+    @objc public convenience init(handler: @escaping (UIPanGestureRecognizer) -> Void) {
         let handler = ClosureHandler<UIPanGestureRecognizer>(handler: handler)
         self.init(target: handler, action: ClosureHandlerSelector)
         setHandler(self, handler: handler)
