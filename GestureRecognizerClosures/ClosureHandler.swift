@@ -10,7 +10,7 @@ internal class ClosureHandler<T: AnyObject>: NSObject {
         self.control = control
     }
 
-    func handle() {
+    @objc func handle() {
         if let control = self.control {
             handler?(control)
         }
