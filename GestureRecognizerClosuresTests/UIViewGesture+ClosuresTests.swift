@@ -31,25 +31,25 @@ class UIViewGestureClosureTests: XCTestCase {
     func testOnSwipeLeft() {
         view.onSwipeLeft { swipeLeft in }
         let swipe = view.gestureRecognizers!.first as! UISwipeGestureRecognizer
-        expect(swipe.direction).to(equal(UISwipeGestureRecognizerDirection.left))
+        expect(swipe.direction).to(equal(UISwipeGestureRecognizer.Direction.left))
     }
 
     func testOnSwipeRight() {
         view.onSwipeRight { swipeRight in }
         let swipe = view.gestureRecognizers!.first as! UISwipeGestureRecognizer
-        expect(swipe.direction).to(equal(UISwipeGestureRecognizerDirection.right))
+        expect(swipe.direction).to(equal(UISwipeGestureRecognizer.Direction.right))
     }
 
     func testOnSwipeUp() {
         view.onSwipeUp { swipeUp in }
         let swipe = view.gestureRecognizers!.first as! UISwipeGestureRecognizer
-        expect(swipe.direction).to(equal(UISwipeGestureRecognizerDirection.up))
+        expect(swipe.direction).to(equal(UISwipeGestureRecognizer.Direction.up))
     }
 
     func testOnSwipeDown() {
         view.onSwipeDown { swipeDown in }
         let swipe = view.gestureRecognizers!.first as! UISwipeGestureRecognizer
-        expect(swipe.direction).to(equal(UISwipeGestureRecognizerDirection.down))
+        expect(swipe.direction).to(equal(UISwipeGestureRecognizer.Direction.down))
     }
 
     func testOnPan() {

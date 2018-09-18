@@ -39,7 +39,7 @@ public extension UIBarButtonItem {
     /**
         Initializes a new item using the specified image, style and handler
      */
-    public convenience init(image: UIImage?, style: UIBarButtonItemStyle, handler: ((UIBarButtonItem) -> Void)? = nil) {
+    public convenience init(image: UIImage?, style: UIBarButtonItem.Style, handler: ((UIBarButtonItem) -> Void)? = nil) {
         self.init(image: image, style: style, target: nil, action: nil)
         initClosureHandler(handler)
     }
@@ -47,7 +47,7 @@ public extension UIBarButtonItem {
     /**
         Initializes a new item using the specified images, style and handler
      */
-    public convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItemStyle, handler: ((UIBarButtonItem) -> Void)? = nil) {
+    public convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItem.Style, handler: ((UIBarButtonItem) -> Void)? = nil) {
         self.init(image: image, landscapeImagePhone: landscapeImagePhone, style: style, target: nil, action: nil)
         initClosureHandler(handler)
     }
@@ -55,7 +55,7 @@ public extension UIBarButtonItem {
     /**
         Initializes a new item using the specified title, style and handler
      */
-    public convenience init(title: String?, style: UIBarButtonItemStyle, handler: ((UIBarButtonItem) -> Void)? = nil) {
+    public convenience init(title: String?, style: UIBarButtonItem.Style, handler: ((UIBarButtonItem) -> Void)? = nil) {
         self.init(title: title, style: style, target: nil, action: nil)
         initClosureHandler(handler)
     }
@@ -63,7 +63,7 @@ public extension UIBarButtonItem {
     /**
         Initializes a new item containing the specified system item and using the specified handler
      */
-    public convenience init(barButtonSystemItem systemItem: UIBarButtonSystemItem, handler: ((UIBarButtonItem) -> Void)? = nil) {
+    public convenience init(barButtonSystemItem systemItem: UIBarButtonItem.SystemItem, handler: ((UIBarButtonItem) -> Void)? = nil) {
         self.init(barButtonSystemItem: systemItem, target: nil, action: nil)
         initClosureHandler(handler)
     }

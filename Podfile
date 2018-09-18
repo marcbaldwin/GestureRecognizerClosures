@@ -3,5 +3,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'GestureRecognizerClosuresTests' do
-  pod 'Nimble', '~> 7'
+  pod 'Nimble'
 end

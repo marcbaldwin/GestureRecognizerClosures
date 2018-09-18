@@ -20,7 +20,7 @@ class UIControlClosuresTests: XCTestCase {
 
         expect(self.expectation).to(beFalse())
         expect(self.control.allTargets.count).to(equal(1))
-        expect(self.control.allControlEvents).to(equal(UIControlEvents.touchDown))
+        expect(self.control.allControlEvents).to(equal(UIControl.Event.touchDown))
         expect(self.control.actions(forTarget: target, forControlEvent: .touchDown)).to(equal([ClosureHandlerSelector.description]))
 
         (target as! ClosureHandler<UIControl>).handle()

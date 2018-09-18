@@ -13,7 +13,7 @@ class UIBarButtonItemClosuresTests: XCTestCase {
 
     func test_handlerProperty() {
         let image = UIImage()
-        let style =  UIBarButtonItemStyle.plain
+        let style =  UIBarButtonItem.Style.plain
         let barButtonItem = UIBarButtonItem(image: image, style: style)
         expect(barButtonItem.target).to(beNil())
         expect(barButtonItem.handler).to(beNil())
@@ -27,7 +27,7 @@ class UIBarButtonItemClosuresTests: XCTestCase {
 
     func test_initWithImageAndStyleAndClosure() {
         let image = UIImage()
-        let style =  UIBarButtonItemStyle.plain
+        let style =  UIBarButtonItem.Style.plain
         let barButtonItem = UIBarButtonItem(image: image, style: style) { barButtonItem in
             self.expectation = true
         }
@@ -40,7 +40,7 @@ class UIBarButtonItemClosuresTests: XCTestCase {
     func test_initWithImageLandscapeImagePhoneStyleAndClosure() {
         let image = UIImage()
         let landscapeImage = UIImage()
-        let style =  UIBarButtonItemStyle.plain
+        let style =  UIBarButtonItem.Style.plain
         let barButtonItem = UIBarButtonItem(image: image, landscapeImagePhone: landscapeImage, style: style) { barButtonItem in
             self.expectation = true
         }
@@ -53,7 +53,7 @@ class UIBarButtonItemClosuresTests: XCTestCase {
 
     func test_initWithTitleStyleAndClosure() {
         let title = "Next"
-        let style =  UIBarButtonItemStyle.plain
+        let style =  UIBarButtonItem.Style.plain
         let barButtonItem = UIBarButtonItem(title: title, style: style) { barButtonItem in
             self.expectation = true
         }
@@ -64,7 +64,7 @@ class UIBarButtonItemClosuresTests: XCTestCase {
     }
 
     func test_initWithBarButtonSystemItemAndClosure() {
-        let systemItem = UIBarButtonSystemItem.add
+        let systemItem = UIBarButtonItem.SystemItem.add
         let barButtonItem = UIBarButtonItem(barButtonSystemItem: systemItem) { barButtonItem in
             self.expectation = true
         }

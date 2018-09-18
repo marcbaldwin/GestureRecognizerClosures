@@ -31,7 +31,7 @@ public extension UISwipeGestureRecognizer {
     /**
         Initializes a swipe gesture recognizer with the specificed direction and handler
      */
-    public convenience init(direction: UISwipeGestureRecognizerDirection, handler: @escaping (UISwipeGestureRecognizer) -> Void) {
+    public convenience init(direction: UISwipeGestureRecognizer.Direction, handler: @escaping (UISwipeGestureRecognizer) -> Void) {
         let handler = ClosureHandler<UISwipeGestureRecognizer>(handler: handler)
         self.init(target: handler, action: ClosureHandlerSelector)
         setHandler(self, handler: handler)
