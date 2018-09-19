@@ -1,10 +1,8 @@
 language: objective-c
-osx_image: xcode9
-
-before_install:
-  - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-
-script:
-  - set -o pipefail
-  - xcodebuild test -workspace GestureRecognizerClosures.xcworkspace -scheme GestureRecognizerClosures -configuration Debug -destination "platform=iOS Simulator,name=iPhone 5s,OS=9.0" -destination "platform=iOS Simulator,name=iPhone 7,OS=10.0" ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES | xcpretty -c
+osx_image: xcode10
+xcode_workspace: GestureRecognizerClosures.xcworkspace
+xcode_scheme: GestureRecognizerClosures
+xcode_destination: platform=iOS Simulator,OS=9.0,name=iPhone 5
+xcode_destination: platform=iOS Simulator,OS=10.0,name=iPhone 5
+xcode_destination: platform=iOS Simulator,OS=11.0.1,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone X
