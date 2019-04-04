@@ -5,6 +5,7 @@ All notable changes to `GestureRecognizerClosures` will be documented in this fi
 `GestureRecognizerClosures` adheres to [Semantic Versioning](http://semver.org/).
 
 ## Release Summary
+- 4.2.0 - Swift 5.0
 - 4.1.0 - Swift 4.2
 - 4.0.0 - Swift 4
 - 3.1.0 - Swift 3.1

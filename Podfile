@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'GestureRecognizerClosuresTests' do
   pod 'Nimble'
+
 end
