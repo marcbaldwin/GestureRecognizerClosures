@@ -1,5 +1,5 @@
 # Gesture Recognizer Closures
-![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg)
+![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg)
 [![Platform](http://img.shields.io/cocoapods/p/GestureRecognizerClosures.svg?style=flat)](http://cocoadocs.org/docsets/GestureRecognizerClosures)
 [![License](http://img.shields.io/cocoapods/l/GestureRecognizerClosures.svg?style=flat)](http://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/LICENSE)
 [![Pod](http://img.shields.io/cocoapods/v/GestureRecognizerClosures.svg?style=flat)](https://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/CHANGELOG.md)
@@ -127,7 +127,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'GestureRecognizerClosures', '~> 4'
+pod 'GestureRecognizerClosures', '~> 5'
 ```
 
 Then, run the following command:
@@ -139,7 +139,7 @@ $ pod install
 To integrate `GestureRecognizerClosures` into your existing CocoaPods Xcode project specify it in your `Podfile`:
 
 ```ruby
-pod 'GestureRecognizerClosures', '~> 4'
+pod 'GestureRecognizerClosures', '~> 5'
 ```
 Then, run the following command:
 ```bash
