@@ -22,6 +22,7 @@ let package = Package(
             name: "GestureRecognizerClosures",
             dependencies: [],
             path: "GestureRecognizerClosures"),
+            exclude: ["Info.plist"]
         .testTarget(
             name: "GestureRecognizerClosuresTests",
             dependencies: ["GestureRecognizerClosures"]),
