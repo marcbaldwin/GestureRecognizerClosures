@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode10.2
-xcode_workspace: GestureRecognizerClosures.xcworkspace
+xcode_project: GestureRecognizerClosures.xcodeproj
 xcode_scheme: GestureRecognizerClosures
 xcode_destination: platform=iOS Simulator,OS=9.0,name=iPhone 5
 xcode_destination: platform=iOS Simulator,OS=10.0,name=iPhone 5

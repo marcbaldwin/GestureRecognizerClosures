@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		984164ADE4DE575EC3B5D896 /* Pods_GestureRecognizerClosuresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C095D11B5773A21D2CD57048 /* Pods_GestureRecognizerClosuresTests.framework */; };
+		AAAA000000000000000000A3 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = AAAA000000000000000000A2 /* Nimble */; };
 		A00B32241C7A858F00286DC8 /* UIControl+ClosuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B32231C7A858F00286DC8 /* UIControl+ClosuresTests.swift */; };
 		A00B32261C7A860200286DC8 /* UIControl+Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B32251C7A860200286DC8 /* UIControl+Closures.swift */; };
 		A03BAB641C470E6B00E8395F /* GestureClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03BAB631C470E6B00E8395F /* GestureClosure.swift */; };
@@ -33,7 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D6408EB2F0B42B6369E193D /* Pods-GestureRecognizerClosuresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureRecognizerClosuresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests.release.xcconfig"; sourceTree = "<group>"; };
 		A00B32231C7A858F00286DC8 /* UIControl+ClosuresTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+ClosuresTests.swift"; sourceTree = "<group>"; };
 		A00B32251C7A860200286DC8 /* UIControl+Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Closures.swift"; sourceTree = "<group>"; };
 		A03BAB631C470E6B00E8395F /* GestureClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureClosure.swift; sourceTree = "<group>"; };
@@ -49,8 +48,6 @@
 		A0E0A2E11B8D186F00E9F7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E0A2E21B8D186F00E9F7D0 /* UIGestureRecognizer+ClosuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+ClosuresTests.swift"; sourceTree = "<group>"; };
 		A0E0A2EC1B8D189D00E9F7D0 /* UIGestureRecognizer+Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+Closures.swift"; sourceTree = "<group>"; };
-		A27428F363D386D9A572F738 /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureRecognizerClosuresTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C095D11B5773A21D2CD57048 /* Pods_GestureRecognizerClosuresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GestureRecognizerClosuresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,38 +63,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D21BEA1BAA0F2A0085219D /* GestureRecognizerClosures.framework in Frameworks */,
-				984164ADE4DE575EC3B5D896 /* Pods_GestureRecognizerClosuresTests.framework in Frameworks */,
+				AAAA000000000000000000A3 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D6A74ABE821164C938DCA9B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C095D11B5773A21D2CD57048 /* Pods_GestureRecognizerClosuresTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4940F230570211C2C37F03C9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A27428F363D386D9A572F738 /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */,
-				1D6408EB2F0B42B6369E193D /* Pods-GestureRecognizerClosuresTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		A0E0A2C61B8D186F00E9F7D0 = {
 			isa = PBXGroup;
 			children = (
 				A0E0A2D21B8D186F00E9F7D0 /* GestureRecognizerClosures */,
 				A0E0A2DF1B8D186F00E9F7D0 /* GestureRecognizerClosuresTests */,
 				A0E0A2D11B8D186F00E9F7D0 /* Products */,
-				4940F230570211C2C37F03C9 /* Pods */,
-				3D6A74ABE821164C938DCA9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,11 +167,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0E0A2E91B8D186F00E9F7D0 /* Build configuration list for PBXNativeTarget "GestureRecognizerClosuresTests" */;
 			buildPhases = (
-				2A58166B6C5E83F96DAF56AA /* [CP] Check Pods Manifest.lock */,
 				A0E0A2D71B8D186F00E9F7D0 /* Sources */,
 				A0E0A2D81B8D186F00E9F7D0 /* Frameworks */,
 				A0E0A2D91B8D186F00E9F7D0 /* Resources */,
-				563DEE22680C0EAAEFC2F775 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +177,9 @@
 				A0E0A2DE1B8D186F00E9F7D0 /* PBXTargetDependency */,
 			);
 			name = GestureRecognizerClosuresTests;
+			packageProductDependencies = (
+				AAAA000000000000000000A2 /* Nimble */,
+			);
 			productName = GestureRecognizerClosuresTests;
 			productReference = A0E0A2DB1B8D186F00E9F7D0 /* GestureRecognizerClosuresTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -236,6 +215,9 @@
 				en,
 			);
 			mainGroup = A0E0A2C61B8D186F00E9F7D0;
+			packageReferences = (
+				AAAA000000000000000000A1 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = A0E0A2D11B8D186F00E9F7D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,45 +244,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2A58166B6C5E83F96DAF56AA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GestureRecognizerClosuresTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		563DEE22680C0EAAEFC2F775 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GestureRecognizerClosuresTests/Pods-GestureRecognizerClosuresTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0E0A2CB1B8D186F00E9F7D0 /* Sources */ = {
@@ -385,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -437,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -461,7 +404,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GestureRecognizerClosures/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.marcb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,7 +427,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GestureRecognizerClosures/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.marcb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,7 +439,6 @@
 		};
 		A0E0A2EA1B8D186F00E9F7D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A27428F363D386D9A572F738 /* Pods-GestureRecognizerClosuresTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = HYV9U93759;
@@ -514,7 +456,6 @@
 		};
 		A0E0A2EB1B8D186F00E9F7D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D6408EB2F0B42B6369E193D /* Pods-GestureRecognizerClosuresTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = HYV9U93759;
@@ -557,6 +498,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAAA000000000000000000A1 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAAA000000000000000000A2 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAAA000000000000000000A1 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0E0A2C71B8D186F00E9F7D0 /* Project object */;
 }

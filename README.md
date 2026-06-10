@@ -1,9 +1,8 @@
 # Gesture Recognizer Closures
 ![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg)
-[![Platform](http://img.shields.io/cocoapods/p/GestureRecognizerClosures.svg?style=flat)](http://cocoadocs.org/docsets/GestureRecognizerClosures)
-[![License](http://img.shields.io/cocoapods/l/GestureRecognizerClosures.svg?style=flat)](http://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/LICENSE)
-[![Pod](http://img.shields.io/cocoapods/v/GestureRecognizerClosures.svg?style=flat)](https://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/CHANGELOG.md)
-[![Build Status](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures.svg?branch=master)](https://travis-ci.org/marcbaldwin/GestureRecognizerClosures)
+![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20tvOS-lightgrey.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/LICENSE)
+[![Swift Package Manager](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
 
 [Closure](http://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html) handlers for gesture recognizers, controls and bar button items.
 
@@ -113,55 +112,25 @@ slider.on(.ValueChanged) { [unowned self] _ in
 
 ## Installation
 
-### Use CocoaPods
+### Use Swift Package Manager
 
-[CocoaPods](http://cocoapods.org/about) is a dependency manager for Cocoa projects that supports embedded frameworks for Swift.
+[Swift Package Manager](https://www.swift.org/package-manager/) is the recommended way to install `GestureRecognizerClosures`.
 
-For instructions on how to install and use CocoaPods checkout the [guides](http://guides.cocoapods.org/).
-
-#### New CocoaPods Project
-To integrate `GestureRecognizerClosures` into your Xcode project that is not currently using CocoaPods specify it in a new `Podfile`:
-
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
-use_frameworks!
-
-pod 'GestureRecognizerClosures', '~> 5'
-```
-
-Then, run the following command:
-
-```bash
-$ pod install
-```
-#### Existing CocoaPods Project
-To integrate `GestureRecognizerClosures` into your existing CocoaPods Xcode project specify it in your `Podfile`:
-
-```ruby
-pod 'GestureRecognizerClosures', '~> 5'
-```
-Then, run the following command:
-```bash
-$ pod install
-```
-
-### Use Carthage
-You can use [Carthage](github.com/carthage/carthage) to install `GestureRecognizerClosures ` by adding it to your `Cartfile`:
+In Xcode, go to **File ▸ Add Package Dependencies…** and enter the repository URL:
 
 ```
-github "marcbaldwin/GestureRecognizerClosures"
+https://github.com/marcbaldwin/GestureRecognizerClosures.git
 ```
 
+Or add it to the `dependencies` of your `Package.swift`:
 
-## Updating
-
-### Use CocoaPods
-To update to the latest version of `GestureRecognizerClosures` run the following command:
-
-```bash
-$ pod update
+```swift
+dependencies: [
+    .package(url: "https://github.com/marcbaldwin/GestureRecognizerClosures.git", from: "5.0.0"),
+]
 ```
+
+Then add `"GestureRecognizerClosures"` to your target's dependencies.
 
 ## Change Log
 You can view the change log [here](http://github.com/marcbaldwin/GestureRecognizerClosures/blob/master/CHANGELOG.md).
